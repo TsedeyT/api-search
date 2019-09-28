@@ -6,7 +6,7 @@ import  '../Search.css'
 
 
 class Search extends Component {
-_isMounted = false;
+
 
 	constructor(props) {
 		super(props)
@@ -23,9 +23,7 @@ _isMounted = false;
 		this.cancel = ''
 	}
 	
-	componentDidMount() {
-    
-}
+	
 
 	/**
 	 * Get the result from search and update the state 
@@ -61,16 +59,14 @@ _isMounted = false;
 			const noResultFound = ! response.data.semanticallySimilarWords.length
 										? 'No search results'
 										:''
-			if(this._isMounted){
+			
 				this.setState({
 				results: response.data.semanticallySimilarWords,
 				message: noResultFound,
 				spinning: false,
 				description: response.data.wordInformation
 				})
-			}
-			
-			
+		
 		/* handle error*/
 		}).catch(err=>{
 			if(axios.isCancel(err)|| err){
@@ -127,7 +123,7 @@ _isMounted = false;
 				
 				<div className="list-container">
 					<div className="list list-top">
-						{/*<div className="list-top--inner">
+						<div className="list-top--inner">
 							<h1>Informations about the word</h1>
 							<h4>Frequency of occurrence: {description.frequency} </h4>
 							<h4>Absolute Rank of the Word : {description.absoluteRank}</h4>
@@ -137,7 +133,7 @@ _isMounted = false;
 										Click here
 									</a>
 							</h4>
-						</div>*/}
+						</div>
 						
 					</div>
 					<ul>
@@ -164,10 +160,7 @@ _isMounted = false;
 	}
 
 
-  componentWillUnmount() {
-  	this._isMounted = false;
-    }
-
+	
   render() {
   	const {query,message, spinning} = this.state
 		return(
