@@ -122,7 +122,7 @@ class Search extends Component {
 			return (
 				
 				<div className="list-container">
-					<div className="list list-top">
+					{/*<div className="list list-top">
 						<div className="list-top--inner">
 							<h1>Informations about the word</h1>
 							<h4>Frequency of occurrence: {description.frequency} </h4>
@@ -135,7 +135,7 @@ class Search extends Component {
 							</h4>
 						</div>
 						
-					</div>
+					</div>*/}
 					<ul>
 						{ results.map( item => {
 							return (
@@ -160,7 +160,7 @@ class Search extends Component {
 	}
 
 
-	
+
   render() {
   	const {query,message, spinning} = this.state
 		return(
