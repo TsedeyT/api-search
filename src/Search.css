@@ -1,0 +1,137 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+.container {
+    width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+
+.search-label {
+	position: relative;
+}
+
+.container input {
+	width: 100%;
+	padding: 16px;
+	font-size: 36px;
+	font-style: italic;
+	color: #444;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.search-icon {
+	position: absolute;
+	top: -10px;
+	font-size: 24px;
+	color: #555;
+	right: 18px;
+}
+
+/*Result Container*/
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-container ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    /* flex: 0 0 50%; */
+    /* max-width: 50%; */
+    padding: 0;
+    justify-content: center;
+}
+.result-item {
+    max-width: 50%;
+}
+.result-item h4{
+	text-align: center;
+}
+
+.list{
+	display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+    margin: 20px;
+    align-items: center;
+    padding: 18px;
+    width: 45%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.list-top {
+    margin: 30px auto;
+}
+
+
+.list-top--inner h2 {
+    text-align: center;
+}
+/*Spinner*/
+.spinner-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 30%;
+}
+
+/*Show and hide*/
+.show {
+	display: inline-block;
+}
+
+.hide {
+	display: none;
+}
+
+
+
+/* Navigation Bar */
+.navbar-dark {
+    background-color: #4d4d4d;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.navbar-brand{
+	color: #fff;
+	font-size: 20px;
+}
+/*Error message*/
+.error-message{
+	text-align: center
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
