@@ -118,7 +118,7 @@ class Search extends Component {
 	showSearchResult =()=>{
 		const { results, description} = this.state
 		if(Object.keys( results ).length && results.length ){
-			console.log(description)
+			
 			return (
 				
 				<div className="list-container">
