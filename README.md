@@ -4,13 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `CD to api_search`
+### `git clone https://github.com/TsedeyT/api-search.git`
+To clone this repo 
+
+### `CD to api-search`
 
 To go to the root directory
 
+### `npm install`
+
+To install all the dependencies
+
 ### `.env` holds the api-key
 
-You need to add your the apy-key in the place of XXXXXXXXXXXXX after the React_ APP_KEY
+You need to add your the apy-key in the place of XXXXXXXXXXXXX in the file .env (which is located in the root directory)
 
 REACT_APP_KEY=XXXXXXXXXXXXX
 
