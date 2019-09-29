@@ -54,7 +54,7 @@ class Search extends Component {
 		})
 		.then(response=>{
 		
-			console.log(response.data)
+			
 			
 			const noResultFound = ! response.data.semanticallySimilarWords.length
 										? 'No search results'
@@ -122,20 +122,15 @@ class Search extends Component {
 			return (
 				
 				<div className="list-container">
-					{/*<div className="list list-top">
+					<div className="list list-top">
 						<div className="list-top--inner">
 							<h1>Informations about the word</h1>
-							<h4>Frequency of occurrence: {description.frequency} </h4>
-							<h4>Absolute Rank of the Word : {description.absoluteRank}</h4>
-							<h4>Additional Link : 
-
-								<a href={description.additionalInformation.link}>
-										Click here
-									</a>
-							</h4>
+							{description && <h4>Frequency of occurrence: {description.frequency} </h4>}
+							{description && <h4>Absolute Rank of the Word : {description.absoluteRank}</h4>}
+							
 						</div>
 						
-					</div>*/}
+					</div>
 					<ul>
 						{ results.map( item => {
 							return (
