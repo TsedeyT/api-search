@@ -17,7 +17,7 @@ To install all the dependencies
 
 ### `.env` holds the api-key
 
-You need to add your the apy-key in the place of XXXXXXXXXXXXX in the file .env (which is located in the root directory)
+You need to add your the api-key in the place of XXXXXXXXXXXXX in the file .env (which is located in the root directory)
 
 REACT_APP_KEY=XXXXXXXXXXXXX
 
